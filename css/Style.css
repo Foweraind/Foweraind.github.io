@@ -29,10 +29,10 @@ header {
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(var(--cor0), var(--cor1));
     height: 120px;
 }
 .topo {
+    background-image: linear-gradient(var(--cor0), var(--cor1));
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@ header {
 }
 .menu {
     background-color: var(--corb);
-    border-bottom: 5px solid var(--cor1);
+    
     display: flex;
     justify-content: space-between;
     position: relative;

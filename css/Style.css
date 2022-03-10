@@ -29,14 +29,14 @@ header {
     align-items: center;
     display: flex;
     flex-direction: column;
-    
+    background-image: linear-gradient(var(--cor1), var(--cor2));
+    height: 120px;
 }
 .topo {
     align-items: center;
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: linear-gradient(var(--cor1), var(--cor2));
 }
 .log-red {
     display: flex;
@@ -57,9 +57,11 @@ header {
 }
 .menu {
     background-color: var(--corb);
+    border-bottom: 5px solid var(--cor2);
     display: flex;
     justify-content: space-between;
     position: relative;
+    height: 100%;
     width: 100%;
     max-width: 1000px;
     min-width: 320px;
@@ -76,7 +78,6 @@ header {
 }
 .menu ul ul {
     display: none;
-    flex-direction: column;
 }
 .menu ul li:hover ul {
     display: flex;

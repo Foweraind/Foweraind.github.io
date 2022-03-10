@@ -27,10 +27,22 @@ body {
 
 header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.log-red {
+    display: flex;
     justify-content: space-between;
     background-image: linear-gradient(var(--cor1), var(--cor2));
     align-items: center;
     height: 60px;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 320px;
+    
+}
+.logo {
+
 }
 
 .rede-social {

@@ -3,21 +3,41 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
-:root {
-    --cor0: #e9271f;
-    --cor1: #A60303;
-    --cor2: #590202;
-    --corp: #0d0d0d;
-    --corb: #ffffff;
+/*estilo Geral*/
 
+:root {
+    /*cor principal*/
+    --cor0: #e4251e;
+    --cor1: #a10f0f;
+    --cor2: #661010;
+
+    /*Cor secundária*/
+    --cor3: #30d65f;
+    --cor4: #0EA138;
+    --cor5: #05501a;
+
+    /*Cores auxiliares*/
+    --cory:rgb(202, 184, 23);
+    --corbb: rgb(36, 136, 194);
+
+    /*Cores cinzas*/
+    --corg1: rgb(82, 82, 82);
+    --corg2: rgb(134, 134, 134);
+    --corg3: rgb(201, 201, 201); 
+
+    /*Branco e Preto*/
+    --corb: #0d0d0d;
+    --corw: #ffffff;
+
+    /*Fontes*/
     --fonte-padrao: 'texturina', serif;
     --titulo: 'el messiri', sans-serif;
     --estilizar: 'expletus sans', cursive;
 }
-
+/*Configuração Geral*/
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -31,22 +51,21 @@ header {
     flex-direction: column;
     height: 120px;
 }
+
+/*Configuração geral do topo*/
 .topo {
     background-image: linear-gradient(var(--cor0), var(--cor1));
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
 }
 .log-red {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     height: 60px;
     width: 100%;
-    max-width: 1000px;
-    min-width: 320px;
-    
+    max-width: 1100px;
 }
 
 .rede-social {
@@ -55,23 +74,23 @@ header {
 .img-red {
     margin: 5px;
 }
+
+/*Configuração geral do menu*/
 .menu {
-    background-color: var(--corb);
+    background-color: var(--corw);
     display: flex;
     justify-content: space-between;
     position: relative;
-    height: 100%;
-    width: 100%;
-    max-width: 1000px;
-    min-width: 320px;
-    
+    height: 100vh;
+    width: 100vw;
+    max-width: 1100px;
 }
 .menu ul {
     list-style: none;
     display: flex;
 } 
 .menu ul li {
-    padding: 10px;
+    padding: 10px 10px 10px 0;
     height: 20px;
     
 }
@@ -86,17 +105,40 @@ header {
     color: var(--cor1);
     font-size: 18px;
     text-transform: uppercase;
+    padding: 2px;
 }
 .menu ul li a:hover {
-    color: var(--corp);
+    color: var(--corb);
     background-color: var(--cor0);
     border-radius: 5px;
-    padding: 2px;
-    transition: 0.2s;
+    padding: 3px;
+    transition: 0.3s ease-in-out;
 }
 .menu ul ul li {
-    padding: 0;
+    padding: 0px;
 }
 
+input {
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
 
+/*Configuração do corpo*/
 
+main {
+    display: flex;
+    justify-content: center;
+}
+article {
+    background-color: var(--corg3);
+    width: 100vw;
+    max-width: 700px;
+    height: 800px;
+}
+aside {
+    background-color: var(--corg2);
+    width: 100vw;
+    max-width: 400px;
+    height: 800px;
+}

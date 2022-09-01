@@ -39,6 +39,11 @@
     header {
         height: auto;
     }
+
+    .log-red {
+        height: 40px;
+    }
+
     .link-books {
         display: block;
         padding: 0px;
@@ -71,7 +76,7 @@
     }
     .menu ul li {
         width: 100%;
-        padding: 3px 5px 3px 5px;
+        padding: 3px 0px 3px 0px;
         border-bottom: 1px solid var(--corg3);
         display: flex;
         justify-content: center;

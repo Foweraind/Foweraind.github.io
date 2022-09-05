@@ -43,9 +43,9 @@
 }
 
 header {
-    align-items: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 120px;
     background-color: white;
     margin: auto;
@@ -87,11 +87,11 @@ header {
 .menu ul {
     list-style: none;
     display: flex;
+    gap: 10px;
 } 
 .menu ul li {
-    padding: 10px 10px 10px 0;
+    padding: 10px 0px;
     height: 20px;
-    
 }
 .menu ul ul {
     display: none;

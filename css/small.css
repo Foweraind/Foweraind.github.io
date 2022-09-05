@@ -2,6 +2,12 @@
 
 /*Configuração para celulares*/
 
-@media screen and (min-width: 600px) {
-    
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .main-content {
+        border: none;
+        border-top: 2px solid var(--corg3);
+    }
+    .secondary-content {
+        display: none;
+    }
 }

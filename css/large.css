@@ -2,6 +2,6 @@
 
 /*Configuração para laptops/desktop*/
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
     
 }

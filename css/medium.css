@@ -2,6 +2,14 @@
 
 /*Configuração para tablet*/
 
-@media screen and (min-width: 768px) {
-    
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .main-content {
+        border: none;
+        border-top: 2px solid var(--corg3);
+        max-width: 100%;
+
+    }
+    .secondary-content {
+        display: none;
+    }
 }

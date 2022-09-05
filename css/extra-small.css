@@ -20,7 +20,7 @@
     /*Cores cinzas*/
     --corg0: rgb(53, 48, 48);
     --corg1: rgb(92, 86, 86);
-    --corg2: rgb(150, 144, 144);
+    --corg2: rgb(172, 164, 164);
     --corg3: rgb(223, 215, 215); 
     --corg4: rgb(247, 241, 241);
 
@@ -49,16 +49,6 @@
         display: none;
     }
 
-    .link-books {
-        display: block;
-        padding: 0px;
-    }
-    #ul-books {
-        display: none;
-    }
-    #more-link {
-        display: none;
-    }
     .hamburger-menu {
         display: flex;
         cursor: pointer;
@@ -96,6 +86,7 @@
         padding: 0px;
         font-size: 0.8em;
         text-align: center;
+        background-color: var(--corw);
     }
     .menu ul li a:hover {
         border-radius: 0px;

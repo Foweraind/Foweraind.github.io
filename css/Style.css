@@ -23,7 +23,7 @@
     /*Cores cinzas*/
     --corg0: rgb(53, 48, 48);
     --corg1: rgb(92, 86, 86);
-    --corg2: rgb(150, 144, 144);
+    --corg2: rgb(172, 164, 164);
     --corg3: rgb(223, 215, 215); 
     --corg4: rgb(247, 241, 241);
 
@@ -46,7 +46,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 120px;
+    height: 100px;
     background-color: white;
     margin: auto;
 }
@@ -87,11 +87,12 @@ header {
 .menu ul {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 5px;
 } 
 .menu ul li {
     padding: 10px 0px;
     height: 20px;
+    justify-content: center;
 }
 .menu ul ul {
     display: none;
@@ -103,14 +104,15 @@ header {
     text-decoration: none;
     color: var(--cor1);
     font-size: 18px;
+    height: 20px;
+    padding: 10px;
     text-transform: uppercase;
-    padding: 2px;
+    background-color: var(--corg3);
 }
 
 .menu ul li a:hover {
     color: var(--corb);
     background-color: var(--cor0);
-    border-radius: 5px;
     transition: 0.3s ease-in-out;
 }
 .menu ul ul li {
@@ -121,9 +123,6 @@ header {
     font-size: 18px;
 }
 
-.link-books {
-    display: none;
-}
 .hamburger-menu {
     display: none;
 }
@@ -139,14 +138,14 @@ main {
 }
 .main-content {
     background-color: var(--corw);
-    border-top: 3px solid var(--corg3);
-    border-left: 3px solid var(--corg3);
+    border-top: 3px solid var(--corg2);
+    border-left: 3px solid var(--corg2);
     width: 100vw;
     max-width: 760px;
     height: 1500px;
 }
 .secondary-content {
-    background-color: var(--corg3);
+    background-color: var(--corg2);
     padding-top: 3px;
     width: 100vw;
     max-width: 340px;

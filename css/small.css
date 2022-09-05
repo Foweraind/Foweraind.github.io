@@ -1,8 +1,101 @@
 @charset "UTF-8";
 
+:root {
+    /*cor principal*/
+    --cor0: #e4251e;
+    --cor1: #a10f0f;
+    --cor2: #661010;
+
+    /*Cor secundária*/
+    --cor3: #30d65f;
+    --cor4: #0EA138;
+    --cor5: #05501a;
+
+    /*Cores auxiliares*/
+    --cory:rgb(202, 184, 23);
+    --corbb: rgb(36, 136, 194);
+
+    /*Cores cinzas*/
+    --corg0: rgb(53, 48, 48);
+    --corg1: rgb(92, 86, 86);
+    --corg2: rgb(172, 164, 164);
+    --corg3: rgb(223, 215, 215); 
+    --corg4: rgb(247, 241, 241);
+
+    /*Branco e Preto*/
+    --corb: #0d0d0d;
+    --corw: #ffffff;
+
+    /*Fontes*/
+    --fonte-padrao: 'texturina', serif;
+    --titulo: 'el messiri', sans-serif;
+    --estilizar: 'expletus sans', cursive;
+}
+
 /*Configuração para celulares*/
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
+    header {
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .log-red {
+        height: 60px;
+    }
+
+    .h1-red {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 100%;
+        border-bottom: 1px solid var(--corg3);
+        color: var(--corw);
+    }
+
+    .hamburger-menu span {
+        font-size: 30px;
+    }
+
+    .hamburger-menu:hover {
+        background-color: var(--corg3);
+        color: var(--corb);
+    }
+    .menu {
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 0px;
+    }
+    .menu ul li {
+        width: 100%;
+        border-bottom: 1px solid var(--corg3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu ul li a {
+        width: 100%;
+        padding: 0px;
+        font-size: 0.8em;
+        text-align: center;
+        background-color: var(--corw);
+    }
+    .menu ul li a:hover {
+        border-radius: 0px;
+        padding: 12.5px 0;
+    }
     .main-content {
         border: none;
         border-top: 2px solid var(--corg3);

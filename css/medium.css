@@ -3,6 +3,10 @@
 /*Configuração para tablet*/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    header {
+        height: 100px;
+    }
+
     .main-content {
         border: none;
         border-top: 2px solid var(--corg3);

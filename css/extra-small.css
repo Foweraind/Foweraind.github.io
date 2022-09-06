@@ -63,6 +63,9 @@
         background-color: var(--corg3);
         color: var(--corb);
     }
+    .hamburger-menu:active {
+        background-color: var(--corg2);
+    }
     .menu {
         justify-content: center;
         align-items: center;
@@ -83,7 +86,7 @@
     }
     .menu ul li a {
         width: 100%;
-        padding: 0px;
+        padding: 10px 0px;
         font-size: 0.8em;
         text-align: center;
         background-color: var(--corw);

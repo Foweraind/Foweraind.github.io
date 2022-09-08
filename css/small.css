@@ -35,6 +35,8 @@
 /*Configuração para celulares*/
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
+
+    /*Configuração do menu*/
     header {
         height: auto;
         align-items: flex-start;
@@ -53,9 +55,8 @@
         cursor: pointer;
         justify-content: center;
         align-items: center;
-        width: 40px;
+        width: 60px;
         height: 100%;
-        border-bottom: 1px solid var(--corg3);
         color: var(--corw);
     }
 
@@ -70,10 +71,15 @@
     .hamburger-menu:active {
         background-color: var(--corg2);
     }
+
+    .more-menu {
+        padding: 15px;
+    }
+
     .menu {
         justify-content: center;
         align-items: center;
-        
+        display: none;
     }
     .menu ul {
         flex-direction: column;
@@ -99,6 +105,8 @@
         border-radius: 0px;
         padding: 12.5px 0;
     }
+
+    /*configuração do conteudo*/
     .main-content {
         border: none;
         border-top: 2px solid var(--corg3);

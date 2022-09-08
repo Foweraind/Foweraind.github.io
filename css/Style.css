@@ -127,7 +127,7 @@ header {
     display: none;
 }
 
-/*Configuração do corpo*/
+/*Configuração do conteudo*/
 
 main {
     width: 100%;
@@ -151,6 +151,8 @@ main {
     max-width: 340px;
     height: 1500px;
 }
+
+/*Configuração do roda-pé*/
 
 footer {
     width: 100%;

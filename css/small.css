@@ -79,8 +79,21 @@
     .menu {
         justify-content: center;
         align-items: center;
-        display: none;
+        display: block;
+        transition: .6s;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
     }
+
+    /*Configuração do menu ligado*/
+
+    .active {
+        display: flex;
+        height: 205px;
+        visibility: visible;
+    }
+
     .menu ul {
         flex-direction: column;
         align-items: center;

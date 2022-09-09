@@ -117,7 +117,7 @@
 
     .main-content {
         border: none;
-        border-top: 2px solid var(--corg3);
+        border-top: 2px solid var(--corg2);
     }
     .secondary-content {
         display: none;

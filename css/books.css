@@ -45,7 +45,7 @@ main {
 #main-book {
     width: 100%;
     height: 1500px;
-    border-left: 3px solid var(--corg3);
-    border-top: 3px solid var(--corg3);
-    border-right: 3px solid var(--corg3);
+    border-left: 2px solid var(--corg2);
+    border-top: 2px solid var(--corg2);
+    border-right: 2px solid var(--corg2);
 }

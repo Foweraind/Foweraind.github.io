@@ -44,27 +44,49 @@
     box-sizing: border-box;
 }
 
-.button-slider {
-    border-bottom: 0px solid var(--corg3);
-    width: 100%;
-    height: 60px;
-}
-
 .slide-flex {
     width: 100%;
-    padding-bottom: 30px;
     margin-bottom: 30px;
     border-bottom: 1px solid var(--corg3);
-    background-color: aqua;
 }
 
 .viewport-flex {
     max-height: 2000px;
-    background-color: aquamarine;
 }
 
 .slider {
     list-style: none;
+    padding: 30px;
+    border-top: 1px solid var(--corg3);
+}
+
+.slides-post a {
+    text-decoration: none;
+}
+
+.post-001 img {
+    height: 330px;
+    background-color: var(--corg3);
+}
+
+.post-002 img {
+    height: 330px;
+    background-color: var(--corg3);
+}
+
+.post-003 img {
+    height: 350px;
+    background-color: var(--corg3);
+}
+
+.post-004 img {
+    height: 450px;
+    background-color: var(--corg3);
+}
+
+.post-005 img {
+    height: 370px;
+    background-color: var(--corg3);
 }
 
 .post-thumbnail {
@@ -75,13 +97,31 @@
 /*Configurção do botões do slider*/
 
 .slick-dots {
-    
+    position: absolute;
+    top: 5px;
+    list-style: none;
+    display: flex !important;
+    gap: 5px;
+}
+
+.slick-dots button {
+    cursor: pointer;
 }
 
 .slick-prev {
-    
+    position: absolute;
+    top: 1px;
+    right: 60px;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
 }
 
 .slick-next {
-    
+    position: absolute;
+    top: 1px;
+    right: 30px;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
 }

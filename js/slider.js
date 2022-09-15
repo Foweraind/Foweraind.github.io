@@ -5,7 +5,7 @@ $('.slider').slick({
   slidesToShow: 1,
   adaptiveHeight: true,
   autoplay: true,
-  autoplaySpeed: 10000,
+  autoplaySpeed: 8000,
 });
 
 const prev = document.querySelector('.slick-prev')

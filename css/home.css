@@ -56,7 +56,7 @@
 
 .slider {
     list-style: none;
-    padding: 30px;
+    padding: 40px;
     border-top: 1px solid var(--corg3);
 }
 
@@ -98,7 +98,7 @@
 
 .slick-dots {
     position: absolute;
-    top: 5px;
+    top: 10px;
     list-style: none;
     display: flex !important;
     gap: 5px;
@@ -106,11 +106,12 @@
 
 .slick-dots button {
     cursor: pointer;
+    width: 20px;
 }
 
 .slick-prev {
     position: absolute;
-    top: 1px;
+    top: 6px;
     right: 60px;
     height: 28px;
     width: 28px;
@@ -119,7 +120,7 @@
 
 .slick-next {
     position: absolute;
-    top: 1px;
+    top: 6px;
     right: 30px;
     height: 28px;
     width: 28px;

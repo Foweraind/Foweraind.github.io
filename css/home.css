@@ -56,7 +56,7 @@
 
 .slider {
     list-style: none;
-    padding: 40px;
+    padding: 40px 0px;
     border-top: 1px solid var(--corg3);
 }
 
@@ -105,24 +105,39 @@
 }
 
 .slick-dots button {
+    font-size: 0px;
     cursor: pointer;
+    height: 10px;
     width: 20px;
+    border: none;
+    background-color: var(--corg2);
+}
+
+.slick-active button{
+    background-color: var(--cor0);
 }
 
 .slick-prev {
     position: absolute;
     top: 6px;
-    right: 60px;
+    right: 70px;
     height: 28px;
     width: 28px;
     cursor: pointer;
+    border: 1px solid var(--corg2);
+    border-radius: 5px;
+    font-size: 0px;
+    
 }
 
 .slick-next {
     position: absolute;
     top: 6px;
-    right: 30px;
+    right: 40px;
     height: 28px;
     width: 28px;
     cursor: pointer;
+    border: 1px solid var(--corg2);
+    border-radius: 5px;
+    font-size: 0px;
 }

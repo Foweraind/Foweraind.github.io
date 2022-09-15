@@ -86,7 +86,7 @@
         overflow-y: hidden;
     }
 
-    /*Configuração do menu ligado*/
+    /*Configuração do menu ativo*/
 
     .active {
         display: flex;
@@ -124,6 +124,7 @@
         border: none;
         border-top: 2px solid var(--corg2);
     }
+    
     .secondary-content {
         display: none;
     }

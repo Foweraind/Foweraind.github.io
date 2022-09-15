@@ -7,13 +7,15 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <title>Blog Foweraind</title>
     <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/extra-small.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/extra-large.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!--css do slider-->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
 </head>
 <body onresize="changedSize()">
     <header>
@@ -77,14 +79,106 @@
             </ul>
         </nav>
     </header>
+    <!--Conteúdo Principal-->
     <main>
-        <article class="main-content"> 
-            <div>
-                <h1>Em Breve</h1>
+        <section class="main-content"> 
+            <!--Slider principal-->
+            <div class="content-flex">
+                <div class="button-slider"></div>
+                <div class="slide-flex">
+                    <div class="viewport-flex">
+                        <ul class="slider">
+                            <li class="slides-post">
+                                <article class="post-001">
+                                    <div class="post-inner">
+                                        <div class="post-thumbnail">
+                                            <a href="index.html">
+                                                <img src="" alt="#">
+                                            </a>
+                                        </div>
+                                        <h2 class="post-title">
+                                            <a href="index.html">Post-001</a>
+                                        </h2>
+                                        <div class="summary">
+                                            <p>esse é meu primeiro teste de slider</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="slades-post">
+                                <article class="post-002">
+                                    <div class="post-inner">
+                                        <div class="post-thumbnail">
+                                            <a href="index.html">
+                                                <img src="" alt="#">
+                                            </a>
+                                        </div>
+                                        <h2 class="post-title">
+                                            <a href="index.html">Post-002</a>
+                                        </h2>
+                                        <div class="summary">
+                                            <p>Testando responsividade</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="slades-post">
+                                <article class="post-003">
+                                    <div class="post-inner">
+                                        <div class="post-thumbnail">
+                                            <a href="index.html">
+                                                <img src="" alt="#">
+                                            </a>
+                                        </div>
+                                        <h2 class="post-title">
+                                            <a href="index.html">post-003</a>
+                                        </h2>
+                                        <div class="summary">
+                                            <p>Testando tamanho</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="slades-post">
+                                <article class="post-004">
+                                    <div class="post-inner">
+                                        <div class="post-thumbnail">
+                                            <a href="index.html">
+                                                <img src="" alt="#">
+                                            </a>
+                                        </div>
+                                        <h2 class="post-title">
+                                            <a href="index.html">Post-004</a>
+                                        </h2>
+                                        <div class="summary">
+                                            <p>Tendo o slider</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="slades-post">
+                                <article class="post-005">
+                                    <div class="post-inner">
+                                        <div class="post-thumbnail">
+                                            <a href="index.html">
+                                                <img src="" alt="#">
+                                            </a>
+                                        </div>
+                                        <h2 class="post-title">
+                                            <a href="index.html">post-005</a>
+                                        </h2>
+                                        <div class="summary">
+                                            <p>Testando Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eum, perspiciatis optio laudantium architecto odio earum aspernatur, provident ad tempore vitae quasi assumenda quaerat veniam quibusdam quod obcaecati, deserunt ex?</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </article>
+        </section>
         <aside class="secondary-content">
-            
         </aside>
     </main>
     <footer>
@@ -92,6 +186,13 @@
             <p>Customizado por Daniel</p>
         </div>
     </footer>
+    <!--Função do menu-->
     <script src="js/função.js"></script>
+
+    <!--Função do slider-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>

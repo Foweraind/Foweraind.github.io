@@ -51,7 +51,7 @@ header {
     margin: auto;
 }
 
-/*Configuração geral do topo*/
+/*Configuração do topo*/
 .topo {
     background-color: var(--cor1);
     align-items: center;
@@ -76,11 +76,10 @@ header {
     margin: 5px;
 }
 
-/*Configuração geral do menu*/
+/*Configuração do menu*/
 .menu {
     background-color: var(--corw);
     display: flex;
-    position: relative;
     width: 100%;
     max-width: 1100px;
 }
@@ -101,11 +100,11 @@ header {
     display: flex;
 }
 .menu ul li a {
+    font-family: var(--estilizar);
     text-decoration: none;
     color: var(--cor1);
     font-size: 18px;
-    height: 20px;
-    padding: 10px;
+    padding: 10px 10px 5px 10px;
     text-transform: uppercase;
     background-color: var(--corg3);
 }
@@ -137,18 +136,20 @@ main {
     justify-content: center;
 }
 .main-content {
+    box-sizing: border-box;
     background-color: var(--corw);
     border-top: 3px solid var(--corg2);
     border-left: 3px solid var(--corg2);
     width: 100vw;
-    max-width: 760px;
+    max-width: 780px;
     height: 1500px;
 }
 .secondary-content {
+    box-sizing: border-box;
     background-color: var(--corg2);
     padding-top: 3px;
     width: 100vw;
-    max-width: 340px;
+    max-width: 320px;
     height: 1500px;
 }
 

@@ -128,10 +128,16 @@
         grid-template-columns: 1fr;
         border-bottom: 0px;
         margin-bottom: 0px;
+        gap: 0px;
+    }
+
+    .grid-item {
+        margin-bottom: 30px;
     }
 
     .grid-post-inner {
         border-bottom: 1px solid var(--corg3);
+        padding-bottom: 30px;
     }
 
     .secondary-content {

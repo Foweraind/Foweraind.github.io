@@ -41,7 +41,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 30px 28.5px 20px;
+    padding: 30px 28.5px 0px;
     box-sizing: border-box;
 }
 
@@ -206,8 +206,4 @@
 .grid-item {
     float: left;
     margin-bottom: 30px;
-}
-
-.grid-post-inner {
-    padding-bottom: 30px;
 }

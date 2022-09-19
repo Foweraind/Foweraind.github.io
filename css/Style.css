@@ -142,7 +142,7 @@ main {
     border-left: 3px solid var(--corg2);
     width: 100%;
     max-width: 780px;
-    height: 1500px;
+    height: auto;
 }
 .secondary-content {
     box-sizing: border-box;
@@ -150,7 +150,7 @@ main {
     padding-top: 3px;
     width: 100%;
     max-width: 320px;
-    height: 1500px;
+    height: auto;
 }
 
 /*Configuração do roda-pé*/

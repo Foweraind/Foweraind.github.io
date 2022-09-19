@@ -124,6 +124,17 @@
         padding: 30px 15px 20px;
     }
 
+    .post-row {
+        grid-template-columns: 1fr;
+        border-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .grid-post-inner {
+        margin-right: 0px;
+        border-bottom: 1px solid var(--corg3);
+    }
+
     .secondary-content {
         display: none;
     }

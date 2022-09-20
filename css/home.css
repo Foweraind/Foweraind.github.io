@@ -34,17 +34,6 @@
     --estilizar: 'expletus sans', cursive;
 }
 
-/*configuração da estrutura*/
-
-.content-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 30px 28.5px 0px;
-    box-sizing: border-box;
-}
-
 /*configuração do slider*/
 
 .slide-flex {
@@ -86,17 +75,6 @@
 }
 .post-005 img {
     height: 370px;
-    background-color: var(--corg3);
-}
-.post-006 img {
-    display: block;
-    height: 170px;
-    background-color: var(--corg3);
-}
-
-.post-007 img {
-    display: block;
-    height: 170px;
     background-color: var(--corg3);
 }
 
@@ -186,24 +164,3 @@
     color: var(--cor1);
 }
 
-/*Configuração do conteúdo*/
-
-.content-grid {
-    width: 100%;
-}
-
-.post-row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    margin-bottom: 30px;
-    border-bottom: 1px solid var(--corg3);
-}
-
-.grid-item {
-    float: left;
-    margin-bottom: 30px;
-}

@@ -240,6 +240,9 @@ main {
     padding-top: 30px;
     width: 100%;
 }
+.advertising iframe {
+    width: 100%;
+}
 
 /*Configuração do roda-pé*/
 

@@ -121,7 +121,7 @@
     }
 
     .content-flex {
-        padding: 30px 15px 20px;
+        padding: 30px 15px 0px;
     }
 
     .post-row {
@@ -129,10 +129,6 @@
         border-bottom: 0px;
         margin-bottom: 0px;
         gap: 0px;
-    }
-
-    .grid-item {
-        margin-bottom: 30px;
     }
 
     .grid-post-inner {

@@ -126,7 +126,7 @@
     }
 
     .content-flex {
-        padding: 30px 20px 20px;
+        padding: 30px 20px 0px;
     }
 
     .post-row {
@@ -136,9 +136,6 @@
         gap: 0px;
     }
 
-    .grid-item {
-        margin-bottom: 30px;
-    }
     
     .grid-post-inner {
         border-bottom: 1px solid var(--corg3);

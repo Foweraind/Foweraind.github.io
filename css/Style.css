@@ -203,7 +203,21 @@ main {
     margin-bottom: 30px;
 }
 
+.post-thumbnail {
+    width: 100%;
+    max-height: 450px;
+}
 
+.post-thumbnail img {
+    width: 100%;
+    /*height: auto;
+    altura oficial*/
+}
+
+.post-thumbnail img:hover {
+    opacity: .8;
+    transition: opacity .2s ease;
+}
 
 /*Temporário*/
 

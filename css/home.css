@@ -52,8 +52,14 @@
     border-top: 1px solid var(--corg3);
 }
 
-.slides-post a {
-    text-decoration: none;
+.flex-item img:hover {
+    opacity: .8;
+    transition: opacity .2s ease;
+}
+
+.flex-item a:hover {
+    color: var(--cor0);
+    transition: all .2s ease;
 }
 
 /*Temporário*/

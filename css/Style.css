@@ -42,6 +42,7 @@
     padding: 0px;
 }
 
+
 header {
     display: flex;
     flex-direction: column;
@@ -70,8 +71,13 @@ header {
 .rede-social {
     display: flex;
     align-items: center;
+}
+
+.h1-red {
+    font-family: var(--titulo);
     color: white;
 }
+
 .img-red {
     margin: 5px;
 }
@@ -82,6 +88,9 @@ header {
     display: flex;
     width: 100%;
     max-width: 1100px;
+    box-sizing: border-box;
+    border-right: 3px solid var(--corg2);
+    border-left: 3px solid var(--corg2);
 }
 .menu ul {
     list-style: none;
@@ -102,8 +111,9 @@ header {
 .menu ul li a {
     font-family: var(--estilizar);
     text-decoration: none;
-    color: var(--cor1);
+    color: var(--cor0);
     font-size: 18px;
+    font-weight: bolder;
     padding: 10px 10px 5px 10px;
     text-transform: uppercase;
     background-color: var(--corg3);
@@ -214,9 +224,25 @@ main {
     altura oficial*/
 }
 
-.post-thumbnail img:hover {
+.grid-item img:hover {
     opacity: .8;
     transition: opacity .2s ease;
+}
+
+.grid-item a:hover {
+    color: var(--cor0);
+    transition: all .2s ease;
+}
+
+.post-title a {
+    text-decoration: none;
+    font-family: var(--titulo);
+    color: var(--corg0);
+}
+
+.summary {
+    font-family: var(--fonte-padrao);
+    color: var(--corg1);
 }
 
 /*Temporário*/

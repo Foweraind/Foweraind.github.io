@@ -82,6 +82,8 @@ header {
     margin: 5px;
 }
 
+
+
 /*Configuração do menu*/
 .menu {
     background-color: var(--corw);
@@ -89,8 +91,7 @@ header {
     width: 100%;
     max-width: 1100px;
     box-sizing: border-box;
-    border-right: 3px solid var(--corg2);
-    border-left: 3px solid var(--corg2);
+    margin-top: 1%;
 }
 .menu ul {
     list-style: none;
@@ -114,18 +115,18 @@ header {
     color: var(--cor0);
     font-size: 18px;
     font-weight: bolder;
-    padding: 10px 10px 5px 10px;
+    padding: 10px 13px 10px 13px;
     text-transform: uppercase;
     background-color: var(--corg3);
+    border-radius: 10px;
+
 }
 
 .menu ul li a:hover {
-    color: var(--corb);
+    color: whitesmoke;
     background-color: var(--cor0);
-    transition: 0.3s ease-in-out;
-}
-.menu ul ul li {
-    padding: 0px;
+    transition: 0.6s ease-in-out;
+    
 }
 
 .menu span {
@@ -141,7 +142,7 @@ header {
 main {
     width: 100%;
     max-width: 1100px;
-    margin: auto;
+    margin: 2% auto ;
     display: flex;
     justify-content: center;
 }

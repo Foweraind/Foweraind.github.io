@@ -81,6 +81,7 @@
         display: block;
         transition: .6s;
         height: 0px;
+        margin-top: 0px;
         visibility: hidden;
         overflow-y: hidden;
     }
@@ -119,6 +120,10 @@
     }
 
     /*configuração do conteudo*/
+
+    main {
+        margin: 0px auto 0px auto;
+    }
 
     .main-content {
         border: none;

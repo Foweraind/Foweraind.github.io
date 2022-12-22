@@ -82,6 +82,10 @@ header {
     margin: 5px;
 }
 
+.logo {
+    display: flex;
+}
+
 ion-icon {
     font-size: 40px;
     color: white;

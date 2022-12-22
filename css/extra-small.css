@@ -49,6 +49,11 @@
         display: none;
     }
 
+    ion-icon {
+        font-size: 30px;
+    }
+    
+
     .hamburger-menu {
         display: flex;
         cursor: pointer;

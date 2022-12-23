@@ -15,6 +15,5 @@ menu.addEventListener('click', () => {
 function changedSize() {
     if (window.innerWidth >= 769) {
         menulist.classList.remove('active')
-    } else {
     }
 }

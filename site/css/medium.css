@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*Configuração para tablet*/
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+    /*Configuração do menu*/
+    header {
+        height: 100px;
+    }
+
+    /*Configuração do conteudo*/
+    .main-content {
+        border: none;
+        border-top: 2px solid var(--corg2);
+        max-width: 100%;
+
+    }
+    .secondary-content {
+        display: none;
+    }
+}

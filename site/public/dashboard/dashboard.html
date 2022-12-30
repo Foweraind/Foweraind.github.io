@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
     <title>Blog Foweraind</title>
-    <link rel="stylesheet" href="css/Style.css">
-    <link rel="stylesheet" href="css/books.css">
-    <link rel="stylesheet" href="css/extra-small.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
-    <link rel="stylesheet" href="css/extra-large.css">
+
+    <link rel="shortcut icon" href="../assets/imagens/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="books.css">
+    <link rel="stylesheet" href="../css/extra-small.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="stylesheet" href="../css/large.css">
+    <link rel="stylesheet" href="../css/extra-large.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <script src="../js/funcoes.js"></script>
+
     <!--Código do google-->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2080134206440806"
      crossorigin="anonymous"></script>
 </head>
+
 <body onresize="changedSize()">
     <header>
+        <!--Redes sociais-->
         <div class="topo">
             <div class="log-red">
-                <a href="index.html" target="_self" rel="prev">
+                <a href="./livro.html" target="_self" rel="prev">
                     <picture>
-                        <source media="(max-width: 599px)" srcset="imagens/logo-foweraind40.png">
-                        <img src="imagens/logo-foweraind60.png" alt="logo-foweraind">
+                        <source media="(max-width: 599px)" srcset="../assets/imagens/logo-foweraind40.png">
+                        <img src="../assets/imagens/logo-foweraind60.png" alt="logo-foweraind">
                     </picture>
                 </a>
                 <nav class="rede-social">
@@ -44,46 +54,47 @@
                     </a>
                 </nav>
                 <div class="hamburger-menu">
-                    <span class="material-symbols-outlined more-menu">menu</span>  
+                    <span class=" material-symbols-outlined more-menu">menu</span>  
                 </div>
             </div>
         </div>
-        <nav class="menu">
+        <!--Menu principal-->
+        <nav class="menu menu-login">
             <ul>
                 <li>
-                    <a href="index.html" target="_self" rel="prev">Home</a>
+                    <a href="./livro.html" target="_self" rel="prev">Livro</a>
                 </li>
                 <li>
-                    <a href="livro.html" target="_self" rel="next">Livro</a>
+                    <a href="./dashboard.html" target="_self" rel="prev">Gráficos</a>
                 </li>
                 <li>
-                    <a href="reviews.html" target="_self" rel="next">Reviews</a>
-                </li>
-                <li>
-                    <a href="noticias.html" target="_self" rel="next">Nóticias</a>
-                </li>
-                <li>
-                    <a href="contato.html" target="_self" rel="next">Contato</a>
+                    <a href="./mural.html" target="_self" rel="next">Comentário</a>
                 </li>
             </ul>
+            <div class="btn-logout" onclick="limparSessao()">
+                <h3>Sair</h3>
+            </div>
         </nav>
     </header>
-    <!--Conteúdo Principal-->
+
     <main>
+        <!--Conteúdo Primário-->
         <article class="main-content main-book">
             <div class="content-flex">
                 <div class="page-title">
                     <span class="material-symbols-outlined folder">folder_open</span>
-                    <h1>CATEGORIA: <span class="category">Livro</span></h1>
+                    <h1>CATEGORIA: <span class="category">indefinido</span></h1>
                 </div>
-                <h1>Em Breve</h1>
+                <h1>Em breve</h1>
             </div>
         </article>
+        <!--Conteúdo secundário-->
         <aside class="secondary-content">
             <div class="aside-flex">
                 <div class="aside-logo">
-                    <a href="index.html">
-                        <img src="imagens/logo-foweraind300.png" alt="logo">
+                    <h3 class="hello">Olá, <span id="b_usuario">usuário</span>!</h3>
+                    <a href="./livro.html">
+                        <img src="../assets/imagens/logo-foweraind300.png" alt="logo">
                     </a>
                 </div>
                 <div class="advertising">
@@ -92,15 +103,25 @@
             </div>
         </aside>
     </main>
+
+    <!--footer inicio-->
     <footer>
         <div>
-            <p>Customizado por Daniel</p>
+            <h4>Feito por Daniel &hearts; Foweraind &copy; 2022
+                <br>
+                <span>
+                    v1.0.0
+                </span>
+            </h4>
         </div>
     </footer>
+    <!--footer fim-->
+
     <!--Função do ion-icons-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!--Função do menu-->
-    <script src="js/função.js"></script>
+    <script src="../js/funçao.js"></script>
 </body>
+
 </html>

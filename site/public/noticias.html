@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
     <title>Blog Foweraind</title>
-    <link rel="stylesheet" href="css/Style.css">
-    <link rel="stylesheet" href="css/home.css">
+
+    <link rel="shortcut icon" href="./assets/imagens/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="css/extra-small.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/extra-large.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <!--css do slider-->
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <!--Código do google-->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2080134206440806"
      crossorigin="anonymous"></script>
+
+    <script src="./js/funcoes.js"></script>
 </head>
+
 <body onresize="changedSize()">
     <header>
+        <!--Redes sociais-->
         <div class="topo">
             <div class="log-red">
-                <a class="logo" href="index.html" target="_self" rel="prev">
+                <a href="index.html" target="_self" rel="prev">
                     <picture>
-                        <source media="(max-width: 599px)" srcset="imagens/logo-foweraind40.png">
-                        <img src="imagens/logo-foweraind60.png" alt="logo-foweraind">
+                        <source media="(max-width: 599px)" srcset="./assets/imagens/logo-foweraind40.png">
+                        <img src="./assets/imagens/logo-foweraind60.png" alt="logo-foweraind">
                     </picture>
                 </a>
                 <nav class="rede-social">
@@ -50,121 +57,38 @@
                 </div>
             </div>
         </div>
+        <!--Menu principal-->
         <nav class="menu">
             <ul>
                 <li>
                     <a href="index.html" target="_self" rel="prev">Home</a>
                 </li>
                 <li>
-                    <a href="livro.html" target="_self" rel="next">Livro</a>
+                    <a href="./reviews.html" target="_self" rel="next">Reviews</a>
                 </li>
                 <li>
-                    <a href="reviews.html" target="_self" rel="next">Reviews</a>
+                    <a href="./noticias.html" target="_self" rel="prev">Nóticias</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="./login.html" target="_self" rel="next">Login</a>
                 </li>
                 <li>
-                    <a href="noticias.html" target="_self" rel="next">Nóticias</a>
-                </li>
-                <li>
-                    <a href="contato.html" target="_self" rel="next">Contato</a>
+                    <a href="./cadastro.html" target="_self" rel="next">Cadastro</a>
                 </li>
             </ul>
         </nav>
     </header>
+
+
     <!--Conteúdo Principal-->
     <main>
-        <section class="main-content"> 
+        <article class="main-content">
             <div class="content-flex">
-                <!--Slider principal-->
-                <div class="slide-flex">
-                    <div class="viewport-flex">
-                        <ul class="slider">
-                            <li class="slides-post">
-                                <article class="post-001 flex-item">
-                                    <div class="post-inner">
-                                        <div class="post-thumbnail">
-                                            <a href="#" target="_self" rel="next">
-                                                <img src="#" alt="imagem">
-                                            </a>
-                                        </div>
-                                        <h2 class="post-title">
-                                            <a href="#" target="_self" rel="next">Em Breve, Post-001</a>
-                                        </h2>
-                                        <div class="summary">
-                                            <p>Resumo</p>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="slides-post">
-                                <article class="post-002 flex-item">
-                                    <div class="post-inner">
-                                        <div class="post-thumbnail">
-                                            <a href="#" target="_self" rel="next">
-                                                <img src="#" alt="imagem">
-                                            </a>
-                                        </div>
-                                        <h2 class="post-title">
-                                            <a href="#" target="_self" rel="next">Em Breve, Post-002</a>
-                                        </h2>
-                                        <div class="summary">
-                                            <p>Resumo</p>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="slides-post">
-                                <article class="post-003 flex-item">
-                                    <div class="post-inner">
-                                        <div class="post-thumbnail">
-                                            <a href="#" target="_self" rel="next">
-                                                <img src="#" alt="imagem">
-                                            </a>
-                                        </div>
-                                        <h2 class="post-title">
-                                            <a href="#" target="_self" rel="next">Em Breve, post-003</a>
-                                        </h2>
-                                        <div class="summary">
-                                            <p>Resumo</p>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="slides-post">
-                                <article class="post-004 flex-item">
-                                    <div class="post-inner">
-                                        <div class="post-thumbnail">
-                                            <a href="#" target="_self" rel="next">
-                                                <img src="#" alt="imagem">
-                                            </a>
-                                        </div>
-                                        <h2 class="post-title">
-                                            <a href="#" target="_self" rel="next">Em Breve, Post-004</a>
-                                        </h2>
-                                        <div class="summary">
-                                            <p>Resumo</p>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="slides-post">
-                                <article class="post-005 flex-item">
-                                    <div class="post-inner">
-                                        <div class="post-thumbnail">
-                                            <a href="#" target="_self" rel="next">
-                                                <img src="#" alt="imagem">
-                                            </a>
-                                        </div>
-                                        <h2 class="post-title">
-                                            <a href="#" target="_self" rel="next">Em Breve, post-005</a>
-                                        </h2>
-                                        <div class="summary">
-                                            <p>Resumo</p>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="page-title">
+                    <span class="material-symbols-outlined folder">folder_open</span>
+                    <h1>CATEGORIA: <span class="category">Notícias</span></h1>
                 </div>
                 <div class="content-grid">
                     <div class="post-row">
@@ -361,12 +285,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </article>
         <aside class="secondary-content">
             <div class="aside-flex">
                 <div class="aside-logo">
                     <a href="index.html">
-                        <img src="imagens/logo-foweraind300.png" alt="logo">
+                        <img src="./assets/imagens/logo-foweraind300.png" alt="logo">
                     </a>
                 </div>
                 <div class="advertising">
@@ -375,30 +299,26 @@
             </div>
         </aside>
     </main>
+
+    <!--footer inicio-->
     <footer>
         <div>
-            <p>Customizado por Daniel</p>
+            <h4>Feito por Daniel &hearts; Foweraind &copy; 2022
+                <br>
+                <span>
+                    v1.0.0
+                </span>
+            </h4>
         </div>
     </footer>
+    <!--footer fim-->
+
     <!--Função do ion-icons-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!--Função do menu-->
-    <script src="js/função.js"></script>
+    <script src="./js/funçao.js"></script>
 
-    <!--Função do slider-->
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery-migrate.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script src="js/slider.js"></script>
-
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <input type="text"><input type="text"><input type="text"><input type="text"><input type="text">
 </body>
+
 </html>

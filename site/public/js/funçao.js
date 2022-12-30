@@ -1,4 +1,4 @@
-/*menu haburguer*/
+/*menu responsivo*/
 
 const menu = document.querySelector('.more-menu')
 
@@ -6,7 +6,7 @@ const menulist = document.querySelector('.menu')
 
 
 
-/*função do menu hamburguer*/
+/*função do menu responsivo*/
 
 menu.addEventListener('click', () => {
     menulist.classList.toggle('active')

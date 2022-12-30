@@ -76,6 +76,7 @@
     }
 
     .menu {
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         display: block;
@@ -90,8 +91,12 @@
 
     .active {
         display: flex;
-        height: 205px;
+        height: 206px;
         visibility: visible;
+    }
+
+    .menu-login {
+        max-height: 170px;
     }
 
     .menu ul {
@@ -117,6 +122,16 @@
     .menu ul li a:hover {
         border-radius: 0px;
         padding: 12.5px 0;
+        background-color: var(--cor3);
+    }
+
+    .btn-logout {
+        width:100%;
+        border-radius: 0px;
+        text-align: center;
+        padding: 10px 0px;
+        border-top: 1px solid var(--corg2);
+        cursor: pointer;
     }
 
     /*configuração do conteudo*/

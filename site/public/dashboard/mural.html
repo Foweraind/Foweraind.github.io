@@ -2,110 +2,148 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="shortcut icon" href="../assets/icon/favicon2.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaTech | Avisos</title>
+
+    <title>Blog Foweraind</title>
+
+    <link rel="shortcut icon" href="../assets/imagens/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="./dashboards.css">
+    <link rel="stylesheet" href="books.css">
+    <link rel="stylesheet" href="../css/extra-small.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="stylesheet" href="../css/large.css">
+    <link rel="stylesheet" href="../css/extra-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <script src="../js/funcoes.js"></script>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <!--Código do google-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2080134206440806"
+     crossorigin="anonymous"></script>
 </head>
 
-<body onload="validarSessao(), atualizarFeed()" style="background-color: #161618;">
-    <!-- <body onload="validarSessao()"> -->
-
-    <div class="janela">
-
-
-        <div class="header-left">
-
-            <h1>AquaTech</h1>
-
-            <div class="hello">
-                <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
-            </div>
-
-            <div class="btn-nav-white">
-                <a href="cards.html">
-                    <h3>Aquários</h3>
+<body onresize="changedSize()" onload="validarSessao(), atualizarFeed()">
+    <header>
+        <!--Redes sociais-->
+        <div class="topo">
+            <div class="log-red">
+                <a href="./livro.html" target="_self" rel="prev">
+                    <picture>
+                        <source media="(max-width: 599px)" srcset="../assets/imagens/logo-foweraind40.png">
+                        <img src="../assets/imagens/logo-foweraind60.png" alt="logo-foweraind">
+                    </picture>
                 </a>
+                <nav class="rede-social">
+                    <h1 class="h1-red">Siga:</h1>
+                    <a class="img-red" href="https://youtube.com/channel/UCfeDPsLcsXSJ6tPlaedmdDA" target="_blank" rel="external">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                    <a class="img-red" href="https://www.facebook.com/daniel.gilberto.311" target="_blank" rel="external">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a class="img-red" href="https://www.instagram.com/foweraind/" target="_blank" rel="external">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a class="img-red" href="https://discord.gg/BjksquVW5A" target="_blank" rel="external">
+                        <ion-icon name="logo-discord"></ion-icon>
+                    </a>
+                </nav>
+                <div class="hamburger-menu">
+                    <span class=" material-symbols-outlined more-menu">menu</span>  
+                </div>
             </div>
-
-            <div class="btn-nav-white">
-                <a href="./dashboard.html">
-                    <h3>Gráficos</h3>
-                </a>
-            </div>
-
-            <div class="btn-nav">
-                <h3>Mural de Avisos</h3>
-            </div>
-
+        </div>
+        <!--Menu principal-->
+        <nav class="menu menu-login">
+            <ul>
+                <li>
+                    <a href="./livro.html" target="_self" rel="prev">Livro</a>
+                </li>
+                <li>
+                    <a href="./dashboard.html" target="_self" rel="next">Gráficos</a>
+                </li>
+                <li>
+                    <a href="./mural.html" target="_self" rel="next">Comentário</a>
+                </li>
+            </ul>
             <div class="btn-logout" onclick="limparSessao()">
                 <h3>Sair</h3>
             </div>
+        </nav>
+    </header>
 
-        </div>
-
-        <div class="dash-right">
-
-            <div class="avisos">
-                <div class="container">
-                    <h1>Publicar um aviso</h1>
-                    <div class="div-form">
-                        <form id="form_postagem" method="post" onsubmit="return publicar()">
-                            <label>
-                                Título:
-                                <br>
-                                <input name="titulo" id="titulo" maxlength="100" type="text">
-                            </label>
-                            <br>
-                            <label>
-                                Descrição (máximo de 250 caracteres):
-                                <br>
-                                <textarea name="descricao" id="textarea_descricao" maxlength="250" rows="5"></textarea>
-                            </label>
-                            <br>
-                            <button>Enviar</button>
-                        </form>
-                    </div>
-                    <h1>Mural de Avisos</h1>
-                    <div class="div-results">
-                        <div id="feed_container" class="feed-container">
+    <main>
+         <!--Conteúdo Primário-->
+        <article class="main-content main-book">
+            <div class="content-flex">
+                <div class="page-title">
+                    <span class="material-symbols-outlined folder">folder_open</span>
+                    <h1>CATEGORIA: <span class="category">Comentário</span></h1>
+                </div>
+                <div class="comentario">
+                    <div class="container">
+                        <h1>Publicar um Comentário</h1>
+                        <div class="div-form">
+                            <form id="form_postagem" method="post" onsubmit="return publicar()">
+                                <label>
+                                    <p>Título:</p>
+                                    <input name="titulo" id="titulo" maxlength="100" type="text">
+                                </label>
+                                <label>
+                                    <p>Descrição (máximo de 500 caracteres):</p>
+                                    <textarea name="descricao" id="textarea_descricao" maxlength="500" rows="5"></textarea>
+                                </label>
+                                <button>Enviar</button>
+                            </form>
+                        </div>
+                        <h1>Mural de Comentário</h1>
+                        <div class="div-results">
+                            <div id="feed_container" class="feed-container">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
-            <!-- MODAL -->
-            <!-- <div id="div_modal" class="div-modal">
-                <div id="modal_backdrop" onclick="fecharModal()" class="modal-backdrop">
+        </article>
+        <!--Conteúdo secundário-->
+        <aside class="secondary-content">
+            <div class="aside-flex">
+                <div class="aside-logo">
+                    <h3 class="hello">Olá, <span id="b_usuario">usuário</span>!</h3>
+                    <a href="./livro.html">
+                        <img src="../assets/imagens/logo-foweraind300.png" alt="logo">
+                    </a>
                 </div>
-                <div id="modal_container" class="modal-container">
-                    <button class="btn-fechar-modal" onclick="fecharModal()">X</button>
+                <div class="advertising">
+                    
                 </div>
-            </div> -->
+            </div>
+        </aside>
+    </main>
 
-            <!-- AGUARDAR -->
-            <!-- <div id="div_aguardar" class="div-aguardar">
-                <img src="./assets/aguarde-pink3.gif" id="img_aguarde">
-            </div>  -->
-
+    <!--footer inicio-->
+    <footer>
+        <div>
+            <h4>Feito por Daniel &hearts; Foweraind &copy; 2022
+                <br>
+                <span>
+                    v1.0.0
+                </span>
+            </h4>
         </div>
-    </div>
+    </footer>
+    <!--footer fim-->
 
-
-
+    <!--Função do ion-icons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Função do menu-->
+    <script src="../js/funçao.js"></script>
 
 </body>
 
@@ -121,6 +159,7 @@
 
     function publicar() {
         var idUsuario = sessionStorage.ID_USUARIO;
+        var nomeUsuario = sessionStorage.NOME_USUARIO;
 
         var corpo = {
             titulo: form_postagem.titulo.value,
@@ -138,7 +177,7 @@
             console.log("resposta: ", resposta);
 
             if (resposta.ok) {
-                window.alert("Post realizado com sucesso pelo usuario de ID: " + idUsuario + "!");
+                window.alert("Post realizado com sucesso pelo usuario: " + nomeUsuario + "!");
                 window.location = "/dashboard/mural.html";
                 limparFormulario();
                 finalizarAguardar();
@@ -159,7 +198,7 @@
     function editar(idAviso) {
         sessionStorage.ID_POSTAGEM_EDITANDO = idAviso;
         console.log("cliquei em editar - " + idAviso);
-        window.alert("Você será redirecionado à página de edição do aviso de id número: " + idAviso);
+        window.alert("Você será redirecionado à página de edição do Comentário");
         window.location = "/dashboard/edicao-aviso.html"
 
     }
@@ -174,7 +213,7 @@
         }).then(function (resposta) {
 
             if (resposta.ok) {
-                window.alert("Post deletado com sucesso pelo usuario de email: " + sessionStorage.getItem("EMAIL_USUARIO") + "!");
+                window.alert("Post deletado com sucesso pelo usuario: " + sessionStorage.getItem("NOME_USUARIO") + "!");
                 window.location = "/dashboard/mural.html"
             } else if (resposta.status == 404) {
                 window.alert("Deu 404!");
@@ -208,7 +247,7 @@
 
                         // criando e manipulando elementos do HTML via JavaScript
                         var divPublicacao = document.createElement("div");
-                        var spanID = document.createElement("span");
+                        //var spanID = document.createElement("span");
                         var spanTitulo = document.createElement("span");
                         var spanNome = document.createElement("span");
                         var divDescricao = document.createElement("div");
@@ -217,7 +256,7 @@
                         var btnDeletar = document.createElement("button");
 
 
-                        spanID.innerHTML = "ID: <b>" + publicacao.idAviso + "</b>";
+                        //spanID.innerHTML = "ID: <b>" + publicacao.idAviso + "</b>";
                         spanTitulo.innerHTML = "Título: <b>" + publicacao.titulo + "</b>";
                         spanNome.innerHTML = "Autor: <b>" + publicacao.nome + "</b>";
                         divDescricao.innerHTML = "Descrição: <b>" + publicacao.descricao + "</b>";
@@ -236,11 +275,11 @@
                         btnEditar.id = "btnEditar" + publicacao.idAviso;
                         btnEditar.setAttribute("onclick", `editar(${publicacao.idAviso})`);
 
-                        btnDeletar.className = "publicacao-btn-editar"
+                        btnDeletar.className = "publicacao-btn-editar publicacao-btn-deletar"
                         btnDeletar.id = "btnDeletar" + publicacao.idAviso;
                         btnDeletar.setAttribute("onclick", `deletar(${publicacao.idAviso})`);
 
-                        divPublicacao.appendChild(spanID);
+                        //divPublicacao.appendChild(spanID);
                         divPublicacao.appendChild(spanNome);
                         divPublicacao.appendChild(spanTitulo);
                         divPublicacao.appendChild(divDescricao);

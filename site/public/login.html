@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog Foweraind</title>
+
+    <link rel="shortcut icon" href="./assets/imagens/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/extra-small.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/extra-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!--Código do google-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2080134206440806"
+     crossorigin="anonymous"></script>
+
+    <script src="./js/funcoes.js"></script>
+</head>
+
+<body onresize="changedSize()">
+    <header>
+        <!--Redes sociais-->
+        <div class="topo">
+            <div class="log-red">
+                <a href="index.html" target="_self" rel="prev">
+                    <picture>
+                        <source media="(max-width: 599px)" srcset="./assets/imagens/logo-foweraind40.png">
+                        <img src="./assets/imagens/logo-foweraind60.png" alt="logo-foweraind">
+                    </picture>
+                </a>
+                <nav class="rede-social">
+                    <h1 class="h1-red">Siga:</h1>
+                    <a class="img-red" href="https://youtube.com/channel/UCfeDPsLcsXSJ6tPlaedmdDA" target="_blank" rel="external">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                    <a class="img-red" href="https://www.facebook.com/daniel.gilberto.311" target="_blank" rel="external">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a class="img-red" href="https://www.instagram.com/foweraind/" target="_blank" rel="external">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a class="img-red" href="https://discord.gg/BjksquVW5A" target="_blank" rel="external">
+                        <ion-icon name="logo-discord"></ion-icon>
+                    </a>
+                </nav>
+                <div class="hamburger-menu">
+                    <span class=" material-symbols-outlined more-menu">menu</span>  
+                </div>
+            </div>
+        </div>
+        <!--Menu principal-->
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html" target="_self" rel="prev">Home</a>
+                </li>
+                <li>
+                    <a href="reviews.html" target="_self" rel="next">Reviews</a>
+                </li>
+                <li>
+                    <a href="noticias.html" target="_self" rel="next">Nóticias</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="./login.html" target="_self" rel="prev">Login</a>
+                </li>
+                <li>
+                    <a href="./cadastro.html" target="_self" rel="next">Cadastro</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main class="main-login">
+        <section class="main-content"> 
+            <div class="content-flex login">
+                <div class="banner">
+                    <div class="alerta_erro">
+                        <div class="card_erro" id="cardErro">
+                            <span id="mensagem_erro"></span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="card">
+                            <h2>Olá de volta!</h2>
+                            <div class="formulario">
+                                <span class="tipo_campo">E-mail:</span>
+                                <input id="email_input" type="email" placeholder="Login">
+                                <span class="tipo_campo">Senha:</span>
+                                <input id="senha_input" type="password" placeholder="******">
+                                <button class="btn" onclick="entrar()">Entrar</button>
+                            </div>
+                            <div id="div_aguardar" class="loading-div">
+                                <img src="./assets/circle-loading.gif" id="loading-gif">
+                            </div>
+                            <div id="div_erros_login">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="secondary-content">
+            <div class="aside-flex">
+                <div class="aside-logo">
+                    <a href="index.html">
+                        <img src="./assets/imagens/logo-foweraind300.png" alt="logo">
+                    </a>
+                </div>
+                <div class="advertising">
+                    
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!--footer inicio-->
+    <footer>
+        <div>
+            <h4>Feito por Daniel &hearts; Foweraind &copy; 2022
+                <br>
+                <span>
+                    v1.0.0
+                </span>
+            </h4>
+        </div>
+    </footer>
+    <!--footer fim-->
+
+    <!--Função do ion-icons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Função do menu-->
+    <script src="./js/funçao.js"></script>
+
+</body>
+
+</html>
+
+<script>
+
+
+    function entrar() {
+        aguardar();
+
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+
+        if (emailVar == "" || senhaVar == "") {
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "(Preencha todos os campos em branco)";
+            finalizarAguardar();
+            return false;
+        }
+        else {
+            setInterval(sumirMensagem, 5000)
+        }
+
+        console.log("FORM LOGIN: ", emailVar);
+        console.log("FORM SENHA: ", senhaVar);
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome;
+                    sessionStorage.ID_USUARIO = json.id;
+
+                    setTimeout(function () {
+                        window.location = "./dashboard/livro.html";
+                    }, 1000); // apenas para exibir o loading
+
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+
+    function sumirMensagem() {
+        cardErro.style.display = "none"
+    }
+
+</script>

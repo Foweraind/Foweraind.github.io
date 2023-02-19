@@ -91,7 +91,7 @@
 
     .active {
         display: flex;
-        height: 205px;
+        height: 165px;
         visibility: visible;
     }
 

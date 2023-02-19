@@ -38,7 +38,7 @@
 
 .slide-flex {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border-bottom: 1px solid var(--corg3);
 }
 
@@ -49,7 +49,6 @@
 .slider {
     list-style: none;
     padding: 40px 0px;
-    border-top: 1px solid var(--corg3);
 }
 
 .flex-item img:hover {

@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+/*Configuração do home*/
+
+:root {
+    /*cor principal*/
+    --cor0: #e4251e;
+    --cor1: #a10f0f;
+    --cor2: #661010;
+
+    /*Cor secundária*/
+    --cor3: #30d65f;
+    --cor4: #0EA138;
+    --cor5: #05501a;
+
+    /*Cores auxiliares*/
+    --cory:rgb(202, 184, 23);
+    --corbb: rgb(36, 136, 194);
+
+    /*Cores cinzas*/
+    --corg0: rgb(53, 48, 48);
+    --corg1: rgb(92, 86, 86);
+    --corg2: rgb(172, 164, 164);
+    --corg3: rgb(223, 215, 215); 
+    --corg4: rgb(247, 241, 241);
+
+    /*Branco e Preto*/
+    --corb: #0d0d0d;
+    --corw: #ffffff;
+
+    /*Fontes*/
+    --fonte-padrao: 'texturina', serif;
+    --titulo: 'el messiri', sans-serif;
+    --estilizar: 'expletus sans', cursive;
+}
+
+/*configuração do slider*/
+
+.slide-flex {
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--corg3);
+}
+
+.viewport-flex {
+    max-height: 2000px;
+}
+
+.slider {
+    list-style: none;
+    padding: 40px 0px;
+    border-top: 1px solid var(--corg3);
+}
+
+.flex-item img:hover {
+    opacity: .8;
+    transition: opacity .2s ease;
+}
+
+.flex-item a:hover {
+    color: var(--cor0);
+    transition: all .2s ease;
+}
+
+/*Temporário*/
+.post-001 img {
+    height: 330px;
+    background-color: var(--corg3);
+}
+.post-002 img {
+    height: 330px;
+    background-color: var(--corg3);
+}
+.post-003 img {
+    height: 330px;
+    background-color: var(--corg3);
+}
+.post-004 img {
+    height: 330px;
+    background-color: var(--corg3);
+}
+.post-005 img {
+    height: 330px;
+    background-color: var(--corg3);
+}
+
+
+/*Configurção do botões do slider*/
+
+.slick-dots {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    list-style: none;
+    display: flex !important;
+    gap: 5px;
+}
+
+.slick-dots button {
+    font-size: 0px;
+    cursor: pointer;
+    height: 10px;
+    width: 20px;
+    border: none;
+    background-color: var(--corg2);
+}
+
+.slick-active button{
+    background-color: var(--cor0);
+}
+
+.slick-prev {
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+    border: 1px solid var(--corg2);
+    border-radius: 5px;
+    font-size: 0px;
+    
+}
+
+.slick-prev:hover {
+    background-color: var(--corg1);
+    color: var(--corw);
+    border: 0px;
+}
+
+.slick-prev:active {
+    color: var(--cor1);
+}
+
+.slick-next {
+    position: absolute;
+    top: 6px;
+    left: 30px;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+    border: 1px solid var(--corg2);
+    border-radius: 5px;
+    font-size: 0px;
+}
+
+.slick-next:hover {
+    background-color: var(--corg1);
+    color: var(--corw);
+    border: 0px;
+}
+
+.slick-next:active {
+    color: var(--cor1);
+}
+
